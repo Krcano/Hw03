@@ -1,10 +1,10 @@
-var lowerCase = [ 'a', 'b', 'c','d', 'e',' f','g','h','i','j','k','l','m','n','o', 'p','q','r','s','t','u','v','w','x','y','z',
+var lowerCase = [ 'a', 'b', 'c','d', 'e','f','g','h','i','j','k','l','m','n','o', 'p','q','r','s','t','u','v','w','x','y','z',
 ];
 
-var upperCase =['A', 'B', 'C','D', 'E',' F','G','H','I','J','K','L','M','N','O', 'P','Q','R','S','T','U','V','W','X','Y','Z', 
+var upperCase =['A', 'B', 'C','D', 'E','F','G','H','I','J','K','L','M','N','O', 'P','Q','R','S','T','U','V','W','X','Y','Z', 
 ];
 
-var specialCharacters = ['!','#','$','%','&','*','+','/',':','@',];
+var specialCharacters = ['!','#','$','%','&','*','+','/','>','@','~'];
 
 var numbers = ['0', '1', '2', '3','4', '5', '6','7','8','9'];
 
@@ -53,9 +53,7 @@ var numbers = ['0', '1', '2', '3','4', '5', '6','7','8','9'];
    lowerLetters: hasLowerLetters,
    upperLetters: hasUpperLetters,
 
- };
- console.log(choices)
- return choices;
+ }; return choices;
  }
 
 
@@ -66,16 +64,16 @@ function getRandomChar(array){
 
 
 
-
+// gernerate password function
  function generatePassword(){
 
   
     var choices = userChoices();
-
+    // final password 
     var password = [];
     // every possible charcter of the types they chose
     var possibleCharacters = [];
-    // max four depending on the types the user wants
+    // max four characters depending on the types the user wants
     var guaranteeCharacters = [];
 
     if(choices.symbols){
@@ -101,7 +99,7 @@ function getRandomChar(array){
     }
 
 
-  } console.log(password)
+  }
   return password.join("");
  }
 
@@ -127,46 +125,3 @@ function getRandomChar(array){
 
  // Add event listener to generate button
   generateBtn.addEventListener("click", writePassword);
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-// My note: Randomizations
-
-//  function randomLower(){
-//    return String.fromCharCode(Math.floor(Math.random()*26)+ 97);
-//  }
-//  function randomUpper(){
-//    return String.fromCharCode(Math.floor(Math.random()*26)+ 65);
-//  }
-//  function randomSpecial(){
-//    return String.fromCharCode(Math.floor(Math.random()*15)+ 33);
-//  }
-//  function randomNumber(){
-//       return String.fromCharCode(Math.floor(Math.random()*10)+ 48);
-//  }
-//  console.log(randomSpecial());
- 
