@@ -8,7 +8,7 @@ This project is a password generator. It has the user choose a password length a
 To get started with the password generator you must click the 'generate password' button and follow the prompts. It will ask you how long you would like your password, if you would like special characters, numbers, uppercase and lowercase letters. Once you follow through with the prompst it will provide your with your fully customized password.
 
 
-![screenshot](./Assets/password-screenshot.png)
+![screenshot](./assets/password-screenshot.png)
 
 [livesite](https://krcano.github.io/Hw03/)
 
