@@ -95,7 +95,7 @@ function getRandom(array){
       guaranteeCharacters.push(getRandom(lowerCase))
     }
    password.concat(guaranteeCharacters);
-    for(var i = 0; i< choices.length- guaranteeCharacters.length; i++){
+    for(var i = 0; i< choices.length; i++){
       var characterResult = getRandom(possibleCharacters);
       password.push(characterResult)
     }
